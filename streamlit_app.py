@@ -37,7 +37,7 @@ st.write("Interview the patient and take a history. Type your questions below.")
 display_messages()
 
 with st.form("question_form"):
-    student_input = st.text_input("Your question:", key="question_input")
+    student_input = st.text_input("Your question:")
     submitted = st.form_submit_button("Send")
     
     if submitted and student_input:
@@ -52,7 +52,6 @@ with st.form("question_form"):
             )
             
             add_message("assistant", response.content[0].text)
-            st.session_state.question_input = ""
             st.rerun()
         except Exception as e:
             st.error(f"Error: {str(e)}")
