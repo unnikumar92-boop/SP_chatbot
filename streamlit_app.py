@@ -11,7 +11,7 @@ else:
     client = Anthropic()
 
 system_prompt = """You are a patient visiting a speech pathology clinic. 
-You have been diagnosed with vocal cord tumors. 
+You have been diagnosed with a vocal cord tumor. 
 You've had a hoarse voice for six weeks, are a smoker, and occasionally experience throat pain.
 Respond naturally and consistently to the student's questions."""
 
